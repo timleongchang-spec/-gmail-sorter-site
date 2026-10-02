@@ -1,37 +1,22 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gmail Sorter — Privacy Policy</title>
-<style>body{font:16px/1.6 -apple-system,Segoe UI,sans-serif;max-width:680px;margin:40px auto;padding:0 20px;color:#222}h1{font-size:24px}h2{font-size:18px;margin-top:28px}a{color:#1a5fb4}</style>
-</head><body>
-<h1>Gmail Sorter — Privacy Policy</h1>
-<p><em>Last updated: 2 October 2026</em></p>
-
-<p><strong>Gmail Sorter</strong> is a personal tool operated by Tim Chang to organise his own Gmail
-mailbox. It is single-user and not offered to the public.</p>
-
-<h2>What it accesses</h2>
-<p>Using the Gmail API with the <code>gmail.modify</code> scope, the app reads email metadata and content
-to classify, label, archive, and move messages within the same Gmail account. The <code>gmail.modify</code>
-scope does <strong>not</strong> permit permanent deletion of mail.</p>
-
-<h2>How email content is used</h2>
-<p>Email subjects and body text are read to decide each message&rsquo;s label and lifecycle. To classify
-messages, some email content is sent to <strong>Anthropic&rsquo;s Claude</strong> (a third-party AI service,
-anthropic.com) for the sole purpose of categorisation. No email content is used for advertising, sold, or
-shared with any other party. Anthropic processes it under its own terms and does not train on it in the
-API/CLI configuration used.</p>
-
-<h2>Storage &amp; retention</h2>
-<p>The app stores only derived metadata (labels, message/thread IDs, timestamps) and an undo log on the
-owner&rsquo;s own machines. It does not retain copies of email bodies beyond transient processing. OAuth
-tokens are stored on the owner&rsquo;s machines and can be revoked anytime at
-<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
-
-<h2>Deletion</h2>
-<p>The app never permanently deletes mail. &ldquo;Staging&rdquo; only applies a label; the owner removes
-anything permanently.</p>
-
-<h2>Contact</h2>
-<p>Tim Chang &mdash; tim.leong.chang@gmail.com</p>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gmail Sorter - Privacy Policy</title><style>body{font-family:system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;line-height:1.55;color:#222}</style></head>
+<body><h1>Privacy Policy: Gmail Sorter (personal use)</h1><p><em>Last updated: 2 October 2026</em></p>
+<p>Gmail Sorter ("the app") is a personal tool operated by Tim Chang to organise his own Gmail mailbox. It has one user, the account
+owner, and only processes that account's data.</p>
+<h2>What the app accesses</h2>
+<p>Through the Gmail API (scope <code>https://www.googleapis.com/auth/gmail.modify</code>) the app reads email content and metadata,
+and applies labels, archives and moves email within the same account. This scope cannot permanently delete mail, and the app never does.</p>
+<h2>How data is used</h2>
+<ul><li>Email content is used only to decide each email's label and whether to keep, archive or stage it for the owner's review.</li>
+<li>To classify email, the app sends the relevant email text to Anthropic's Claude AI service, using the owner's own Claude account.
+No other third party receives email content. Nothing is sold, shared for advertising, or used for analytics.</li></ul>
+<h2>Storage and retention</h2>
+<ul><li>A working copy of email content and the app's decisions are stored only on the owner's own computer, to run the app and keep an undo log.</li>
+<li>OAuth tokens are stored only on the owner's own computers and can be revoked at any time at
+<a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li></ul>
+<h2>Sharing</h2><p>None, beyond the AI classification described above.</p>
+<h2>Google API Services User Data Policy</h2>
+<p>Gmail Sorter's use of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>Contact</h2><p>Tim Chang, tim.leong.chang@gmail.com</p>
 </body></html>
